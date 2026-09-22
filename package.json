@@ -1,0 +1,23 @@
+{
+  "name": "datastructure",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/taiwan-sl/datastructure#readme",
+  "bugs": {
+    "url": "https://github.com/taiwan-sl/datastructure/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taiwan-sl/datastructure.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "nodejs",
+  "main": "First.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
