@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "啟動程式First",
+            "name": "啟動程式",
             "skipFiles": [
                 "<node_internals>/**"
             ],

@@ -11,8 +11,21 @@ while (true) {
         continue;
     }else
         break;
+    // if(weight>=10 && weight<=200){
+    //     break;
+    // }else{
+    //     console.log("Please 10~200!");
+    //     continue;
+    // }
 }
-
+while (true) {
+    height = readline.questionFloat('Your height (80~220 cm)? ');
+    if (height < 80 || height > 220){
+        console.log("Please 80~220 (cm)!");
+        continue;
+    }else
+        break;
+}
 
 
 var bmi = weight / ((height / 100) ** 2);
