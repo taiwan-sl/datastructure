@@ -11,6 +11,7 @@ b[1]=c[2];
 
 console.log("b[3]="+b[3])
 
+//call by reference &/address *
 function average(s){
     //check data
     var sum=0;
@@ -19,6 +20,7 @@ function average(s){
         sum += s[i];
     }
     avg = sum/s.length;
+    s[0]=100;
     return avg;
 }
 
@@ -30,4 +32,12 @@ for (let i =0;  i < num; i++){
 }
 console.log("Average="+average(ary));
 
+//call by value
+function add(a,b){
+
+    a=70,b=50;
+    return a+b;
+}
+var X=50,Y=70;
+console.log("X+Y="+ add(X,Y));
 
