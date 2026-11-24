@@ -1,0 +1,30 @@
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(50, 10px);
+    grid-template-rows: repeat(50, 10px);
+    width: 500px;
+    height: 500px;
+    border: 1px solid #6c757d;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.cell:hover {
+    border-color: rgba(128, 128, 128, 0.5);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.cell.live {
+    background-color: #28a745;
+}
+
+.cell.dead {
+    background-color: #f8f9fa;
+}

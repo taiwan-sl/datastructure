@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1100 700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .node { fill: #fff; stroke: #333; stroke-width: 2; }
+    .label { font-family: monospace; font-size: 14px; }
+    .arrow { stroke: #555; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555" />
+    </marker>
+  </defs>
+
+  <!-- Constants -->
+  <rect x="10" y="10" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="38" text-anchor="middle" class="label">GRID_SIZE = 50</text>
+  <text x="80" y="52" text-anchor="middle" class="label">SPEED_MS = 300</text>
+
+  <!-- Init -->
+  <rect x="10" y="75" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="103" text-anchor="middle" class="label">init()</text>
+  <text x="80" y="117" text-anchor="middle" class="label">resetGrid() → render()</text>
+
+  <!-- Main loop -->
+  <rect x="10" y="140" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="168" text-anchor="middle" class="label">loop()</text>
+
+  <!-- isRunning check -->
+  <rect x="10" y="200" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="228" text-anchor="middle" class="label">isRunning?</text>
+
+  <!-- nextGeneration -->
+  <rect x="10" y="260" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="288" text-anchor="middle" class="label">nextGeneration()</text>
+  <rect x="10" y="320" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="348" text-anchor="middle" class="label">countLiveNeighbors</text>
+  <text x="80" y="362" text-anchor="middle" class="label">Game of Life rules</text>
+  <rect x="10" y="380" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="408" text-anchor="middle" class="label">render()</text>
+
+  <!-- UI controls -->
+  <rect x="10" y="440" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="468" text-anchor="middle" class="label">UI Buttons</text>
+  <rect x="10" y="500" width="140" height="50" rx="4" class="node" />
+  <text x="80" y="528" text-anchor="middle" class="label">toggleRunning</text>
+  <text x="80" y="542" text-anchor="middle" class="label">btn-reset / btn-random / btn-clear</text>
+
+  <!-- SVG title -->
+  <text x="80" y="660" text-anchor="middle" class="label">Flowchart for gamelife/app.js</text>
+</svg>
